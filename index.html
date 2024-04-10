@@ -16,9 +16,10 @@
         header {
             background-color: #fff;
             color: #333;
-            padding: 20px 0;
+            padding: 20px 40px;
             text-align: center;
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            position: relative;
         }
         .news-company {
             font-family: 'Times New Roman', Times, serif;
@@ -28,17 +29,92 @@
             margin-bottom: 10px;
             text-transform: uppercase;
             position: relative;
+            display: inline-block;
         }
         .news-company:after {
             content: '';
             display: block;
-            width: 60px;
+            width: calc(100% - 40px);
             height: 2px;
             background-color: #006699;
             position: absolute;
             bottom: -6px;
-            left: 50%;
-            transform: translateX(-50%);
+            left: 20px;
+        }
+        .icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .search-icon {
+            right: 20px;
+        }
+        .setting-icon {
+            left: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        article {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praveen Breaks Barriers: First Openly Gay Man in Dehradun, Uttarakhand, India</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #fff;
+            color: #333;
+            padding: 20px 40px;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .news-company {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: #006699;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            position: relative;
+            display: inline-block;
+        }
+        .news-company:after {
+            content: '';
+            display: block;
+            width: calc(100% - 40px);
+            height: 2px;
+            background-color: #006699;
+            position: absolute;
+            bottom: -6px;
+            left: 20px;
+        }
+        .icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .search-icon {
+            right: 20px;
+        }
+        .setting-icon {
+            left: 20px;
         }
         h1 {
             font-size: 24px;
@@ -91,7 +167,9 @@
 </head>
 <body>
     <header>
+        <div class="icon setting-icon">&#9881;</div>
         <div class="news-company">Safedh Doodh</div>
+        <div class="icon search-icon">&#128269;</div>
         <h1>Praveen Breaks Barriers: First Openly Gay Man in Dehradun, Uttarakhand, India</h1>
     </header>
     <article>
@@ -126,3 +204,55 @@
     </article>
 </body>
 </html>
+￼Enter            margin-top: 20px;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .advertisement {
+            position: relative;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        .advertisement img {
+            max-width: 100%;
+            border-radius: 8px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-links a {
+            color: #006699;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="icon setting-icon">&#9881;</div>
+        <div class="news-company">Safedh Doodh</div>
+        <div class="icon search-icon">&#128269;</div>
+        <h1>Praveen Breaks Barriers: First Openly Gay Man in Dehradun, Uttarakhand, India</h1>
+    </header>
+    <article>
+        <div class="advertisement">
+            <img src="advertisement_image.png" alt="Advertisement: Praveen Ramdi Khana">
+        </div>
+        <div class="image">
+            <img src="praveen_image.jpg" alt="Praveen">
