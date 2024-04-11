@@ -109,16 +109,49 @@
 <body>
     <header>
         <div class="news-company">Safed Doodh</div>
-       <nav>
+<nav>
     <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="opinion.html">Opinion</a></li>
-        <li><a href="business.html">Business</a></li>
-        <li><a href="sports.html">Sports</a></li>
-        <li><a href="lifestyle.html">Lifestyle</a></li>
+        <li><a href="#" onclick="loadContent('home')">Home</a></li>
+        <li><a href="#" onclick="loadContent('news')">News</a></li>
+        <li><a href="#" onclick="loadContent('opinion')">Opinion</a></li>
+        <li><a href="#" onclick="loadContent('business')">Business</a></li>
+        <li><a href="#" onclick="loadContent('sports')">Sports</a></li>
+        <li><a href="#" onclick="loadContent('lifestyle')">Lifestyle</a></li>
     </ul>
 </nav>
+
+<div id="content">
+    <!-- Content will be loaded here -->
+</div>
+
+<script>
+function loadContent(section) {
+    const content = document.getElementById('content');
+    switch (section) {
+        case 'home':
+            content.innerHTML = '<h2>Home</h2><p>Welcome to the home section!</p>';
+            break;
+        case 'news':
+            content.innerHTML = '<h2>News</h2><p>Latest news updates!</p>';
+            break;
+        case 'opinion':
+            content.innerHTML = '<h2>Opinion</h2><p>Read our opinions!</p>';
+            break;
+        case 'business':
+            content.innerHTML = '<h2>Business</h2><p>Business insights!</p>';
+            break;
+        case 'sports':
+            content.innerHTML = '<h2>Sports</h2><p>Sports updates!</p>';
+            break;
+        case 'lifestyle':
+            content.innerHTML = '<h2>Lifestyle</h2><p>Lifestyle articles!</p>';
+            break;
+        default:
+            content.innerHTML = '<h2>Home</h2><p>Welcome to the home section!</p>';
+    }
+}
+</script>
+
 
     </header>
 
